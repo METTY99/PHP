@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+<head><title>Massimo e Minimo </title></head>
+<body>
+<?php
+$voti = array(135, 400, 60, 170, 20, 50);
+{
+	$lunghezza_array=count($voti);
+	for($i=0; $i<$lunghezza_array; $i++){
+		if($i==0)
+		{
+			$Max=$voti[$i];
+			$Min=$voti[$i];
+		}
+		else{
+			if ($Max<$voti[$i])
+			{
+		 		$Max=$voti[$i];
+		 	}
+			if ($Min>$voti[$i])
+			{
+				$Min=$voti[$i];
+			}	
+		}
+	}
+	echo "Max-->".$Max."<br/>";
+ 	echo "Min-->".$Min."<br/>";
+}
+?>
+</body>
+</html>
